@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.listView);
         List<Map<String,Object>> Restaurants = new ArrayList<Map<String,Object>>();
-        Map<String,Object> Res = new HashMap<String,Object>();
         Manager.Initialization();
-        for (int i = 0;i <= 10;i++) {
+        for (int i = 0;i <= 19;i++) {
+            Map<String,Object> Res = new HashMap<String,Object>();
             Res.put("Name",Manager.findRestaurantByID(i).Name);
             Res.put("Title",Manager.findRestaurantByID(i).Title);
             Res.put("Icon",Manager.findRestaurantByID(i).icon);

@@ -1,6 +1,8 @@
 package com.androidlearning.restaurantlist;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +15,7 @@ public class Detail extends AppCompatActivity implements Serializable {
     private TextView Name;
     private TextView Info;
     private Restaurant Res;
+    private Button Back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +28,12 @@ public class Detail extends AppCompatActivity implements Serializable {
         DetailIcon.setImageResource(Res.icon);
         Name.setText(Res.Name);
         Info.setText(Res.Info);
+        Back = (Button) findViewById(R.id.Back);
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }
