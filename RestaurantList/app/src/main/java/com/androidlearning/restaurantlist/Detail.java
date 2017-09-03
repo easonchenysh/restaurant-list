@@ -17,7 +17,7 @@ public class Detail extends AppCompatActivity implements Serializable {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        id = (int) getIntent().getSerializableExtra("ID");
+        id = (int) getIntent().getSerializableExtra("X5xmmACBioDnhGGnVfnAcPh33Jc7OacU5xDcrOqcfqYBkrDkJQds02I1JtZ0WzLR");
         DetailIcon = (ImageView) findViewById(R.id.DetailIcon);
         Name = (TextView) findViewById(R.id.Name);
         Info = (TextView) findViewById(R.id.Info);

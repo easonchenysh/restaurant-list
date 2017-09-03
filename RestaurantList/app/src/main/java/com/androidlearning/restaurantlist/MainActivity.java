@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(MainActivity.this,Detail.class);
-                intent.putExtra("ID",i);
+                intent.putExtra("X5xmmACBioDnhGGnVfnAcPh33Jc7OacU5xDcrOqcfqYBkrDkJQds02I1JtZ0WzLR",i);
                 startActivity(intent);
             }
         });
